@@ -6,8 +6,4 @@ app.use(express.json());
 app.use(express.static('dist'));
 app.use(express.urlencoded({extended: true}));
 
-app.get('/', (req, res) => {
-  res.send('Hello world');
-});
-
 app.listen(port, () => console.log(`Listening on ${port}...`));
